@@ -1,107 +1,110 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>VIP Channel - ज्वाइन करें</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Channel - Telegram Join</title>
     <style>
-        body {
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            /* आपकी इमेज जैसा बैकग्राउंड रेडियल ग्रेडिएंट */
+            background: radial-gradient(circle, #5b7564 0%, #3e5044 60%, #2b3930 100%);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            color: #fff;
+            min-height: 100vh;
+            padding: 20px 10px;
         }
 
         .container {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 40px;
-            width: 90%;
-            max-width: 400px;
+            width: 100%;
+            max-width: 480px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             text-align: center;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.18);
+            gap: 18px;
         }
 
-        .logo {
-            width: 80px;
-            height: 80px;
-            background-color: #0088cc;
-            border-radius: 50%;
+        /* पीले बैकग्राउंड और लाल टेक्स्ट वाले बटन */
+        .yellow-btn {
+            display: block;
+            width: 100%;
+            background-color: #FFFF00; /* Bright Yellow */
+            color: #FF0000; /* Bright Red */
+            font-size: 24px;
+            font-weight: 900;
+            text-decoration: none;
+            padding: 12px 10px;
+            border-radius: 3px;
+            text-transform: lowercase;
+            letter-spacing: -0.5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .yellow-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* बीच में इमेज बॉक्स (रेड बॉर्डर के साथ) */
+        .image-card {
+            width: 220px;
+            height: 220px;
+            border: 3px solid #FF0000;
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5);
+            margin: 5px 0;
+            background-color: #000;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
-            margin: 0 auto 20px auto;
-            font-size: 40px;
-            font-weight: bold;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.5);
         }
 
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .channel-name {
-            font-size: 18px;
-            color: #aaa;
-            margin-bottom: 20px;
-        }
-
-        .highlight {
-            background-color: #ffcc00;
-            color: #000;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 16px;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            color: #ddd;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #0088cc;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            box-shadow: 0 4px 15px rgba(0, 136, 204, 0.3);
-        }
-
-        .btn:hover {
-            background-color: #0077b5;
-            transform: translateY(-2px);
-        }
-
-        .btn:active {
-            transform: translateY(1px);
+        .image-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="logo">A</div>
-        <h1>हमारे टेलीग्राम चैनल से जुड़ें</h1>
-        <div class="channel-name">@afrozgaming1</div>
-        <div class="highlight">100% ट्रस्टेड चैनल</div>
-        <p>ताज़ा अपडेट्स, गेमिंग से जुड़ी जानकारी और बहुत कुछ पाने के लिए अभी हमारे टेलीग्राम चैनल का हिस्सा बनें।</p>
-        <a href="https://t.me/afrozgaming1" class="btn">टेलीग्राम पर जुड़ें</a>
+
+        <!-- 1. no loss 100% chance -->
+        <a href="https://t.me/afrozgaming1" class="yellow-btn">
+            no loss 100% chance
+        </a>
+
+        <!-- 2. telegram channel join now -->
+        <a href="https://t.me/afrozgaming1" class="yellow-btn">
+            telegram channel join now
+        </a>
+
+        <!-- 3. VIP Channel Image -->
+        <a href="https://t.me/afrozgaming1" class="image-card">
+            <!-- यहाँ अपनी फोटो का नाम/URL बदलें -->
+            <img src="logo.jpg" alt="VIP Channel Trading Logo">
+        </a>
+
+        <!-- 4. telegram channel join now -->
+        <a href="https://t.me/afrozgaming1" class="yellow-btn">
+            telegram channel join now
+        </a>
+
+        <!-- 5. VIP prediction join now -->
+        <a href="https://t.me/afrozgaming1" class="yellow-btn" style="text-transform: none;">
+            VIP prediction join now
+        </a>
+
     </div>
+
 </body>
 </html>
